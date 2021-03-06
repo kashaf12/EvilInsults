@@ -8,13 +8,7 @@ function App() {
 	const [color, setColor] = useState(["#33ccff", "#ff99cc"]);
 	useEffect(() => {
 		fetch("https://evilinsult.com/generate_insult.php?lang=en&type=json", {
-			headers: {
-				"Content-Type": "application/json",
-				"Access-Control-Allow-Origin": "*",
-			},
-			method: "GET",
-
-			mode: "cors",
+			"Content-Type": "application/json",
 		})
 			.then((res) => res.json())
 			.then((res) => {
