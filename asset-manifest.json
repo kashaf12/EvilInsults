@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/EvilInsults/static/css/main.6c500e2f.chunk.css",
+    "main.js": "/EvilInsults/static/js/main.8e898831.chunk.js",
+    "main.js.map": "/EvilInsults/static/js/main.8e898831.chunk.js.map",
+    "runtime-main.js": "/EvilInsults/static/js/runtime-main.d8705c73.js",
+    "runtime-main.js.map": "/EvilInsults/static/js/runtime-main.d8705c73.js.map",
+    "static/css/2.3406d7a6.chunk.css": "/EvilInsults/static/css/2.3406d7a6.chunk.css",
+    "static/js/2.a90a6c76.chunk.js": "/EvilInsults/static/js/2.a90a6c76.chunk.js",
+    "static/js/2.a90a6c76.chunk.js.map": "/EvilInsults/static/js/2.a90a6c76.chunk.js.map",
+    "static/js/3.849519af.chunk.js": "/EvilInsults/static/js/3.849519af.chunk.js",
+    "static/js/3.849519af.chunk.js.map": "/EvilInsults/static/js/3.849519af.chunk.js.map",
+    "index.html": "/EvilInsults/index.html",
+    "static/css/2.3406d7a6.chunk.css.map": "/EvilInsults/static/css/2.3406d7a6.chunk.css.map",
+    "static/css/main.6c500e2f.chunk.css.map": "/EvilInsults/static/css/main.6c500e2f.chunk.css.map",
+    "static/js/2.a90a6c76.chunk.js.LICENSE.txt": "/EvilInsults/static/js/2.a90a6c76.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8705c73.js",
+    "static/css/2.3406d7a6.chunk.css",
+    "static/js/2.a90a6c76.chunk.js",
+    "static/css/main.6c500e2f.chunk.css",
+    "static/js/main.8e898831.chunk.js"
+  ]
+}
