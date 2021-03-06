@@ -2,26 +2,15 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import chroma from "chroma-js";
+import insult from "./insult.json";
 
 function App() {
 	const [data, setData] = useState(null);
 	const [color, setColor] = useState(["#33ccff", "#ff99cc"]);
 	useEffect(() => {
-		fetch("https://evilinsult.com/generate_insult.php?lang=en&type=json", {
-			headers: {
-				"Content-Type": "application/json",
-				"Access-Control-Allow-Origin": "*",
-				"Access-Control-Allow-Headers": "*",
-				"Access-Control-Allow-Methods": "POST, PUT, DELETE, GET, OPTIONS",
-				"Access-Control-Request-Method": "*",
-			},
-			mode: "cors",
-		})
-			.then((res) => res.json())
-			.then((res) => {
-				setData(res.insult);
-			});
-		console.log();
+		const ind = Math.floor(Math.random() * insult.length) + 0;
+		const insultData = insult[ind];
+		setData(insultData);
 		setColor([chroma.random(), chroma.random()]);
 	}, []);
 
