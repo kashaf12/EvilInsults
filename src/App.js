@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+import "./App.css";
+import { useEffect, useState } from "react";
+import chroma from "chroma-js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [data, setData] = useState(null);
+	const [color, setColor] = useState(["#33ccff", "#ff99cc"]);
+	useEffect(() => {
+		fetch("https://evilinsult.com/generate_insult.php?lang=en&type=json", {
+			headers: {
+				"Content-Type": "application/json",
+				"Access-Control-Allow-Origin": "*",
+			},
+			method: "GET",
+
+			mode: "cors",
+		})
+			.then((res) => res.json())
+			.then((res) => {
+				setData(res.insult);
+			});
+		console.log();
+		setColor([chroma.random(), chroma.random()]);
+	}, []);
+
+	return (
+		<div
+			className='App'
+			style={{
+				background: `linear-gradient(to bottom,  ${color[0]} 0%,${color[1]} 100%)`,
+			}}>
+			<h1 className='header mb-2'>Evil Quotes</h1>
+			<div
+				style={{
+					position: "relative",
+					marginTop: "20px",
+				}}>
+				{!data ? (
+					<div class='spin'></div>
+				) : (
+					<div class='blockquote overlay'>
+						<p
+							style={{
+								fontSize: "larger",
+							}}>
+							{data}
+						</p>
+					</div>
+				)}
+			</div>
+		</div>
+	);
 }
 
 export default App;
