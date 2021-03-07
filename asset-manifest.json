@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/EvilInsults/static/css/main.6c500e2f.chunk.css",
-    "main.js": "/EvilInsults/static/js/main.1a1d0dcb.chunk.js",
-    "main.js.map": "/EvilInsults/static/js/main.1a1d0dcb.chunk.js.map",
-    "runtime-main.js": "/EvilInsults/static/js/runtime-main.c874d1a7.js",
-    "runtime-main.js.map": "/EvilInsults/static/js/runtime-main.c874d1a7.js.map",
-    "static/css/2.3406d7a6.chunk.css": "/EvilInsults/static/css/2.3406d7a6.chunk.css",
-    "static/js/2.ed96dbc6.chunk.js": "/EvilInsults/static/js/2.ed96dbc6.chunk.js",
-    "static/js/2.ed96dbc6.chunk.js.map": "/EvilInsults/static/js/2.ed96dbc6.chunk.js.map",
-    "static/js/3.4b399908.chunk.js": "/EvilInsults/static/js/3.4b399908.chunk.js",
-    "static/js/3.4b399908.chunk.js.map": "/EvilInsults/static/js/3.4b399908.chunk.js.map",
+    "main.css": "/EvilInsults/static/css/main.894ca554.chunk.css",
+    "main.js": "/EvilInsults/static/js/main.ad059407.chunk.js",
+    "main.js.map": "/EvilInsults/static/js/main.ad059407.chunk.js.map",
+    "runtime-main.js": "/EvilInsults/static/js/runtime-main.188d0f08.js",
+    "runtime-main.js.map": "/EvilInsults/static/js/runtime-main.188d0f08.js.map",
+    "static/js/2.ef9459f3.chunk.js": "/EvilInsults/static/js/2.ef9459f3.chunk.js",
+    "static/js/2.ef9459f3.chunk.js.map": "/EvilInsults/static/js/2.ef9459f3.chunk.js.map",
+    "static/js/3.472515ad.chunk.js": "/EvilInsults/static/js/3.472515ad.chunk.js",
+    "static/js/3.472515ad.chunk.js.map": "/EvilInsults/static/js/3.472515ad.chunk.js.map",
     "index.html": "/EvilInsults/index.html",
-    "static/css/2.3406d7a6.chunk.css.map": "/EvilInsults/static/css/2.3406d7a6.chunk.css.map",
-    "static/css/main.6c500e2f.chunk.css.map": "/EvilInsults/static/css/main.6c500e2f.chunk.css.map",
-    "static/js/2.ed96dbc6.chunk.js.LICENSE.txt": "/EvilInsults/static/js/2.ed96dbc6.chunk.js.LICENSE.txt"
+    "static/css/main.894ca554.chunk.css.map": "/EvilInsults/static/css/main.894ca554.chunk.css.map",
+    "static/js/2.ef9459f3.chunk.js.LICENSE.txt": "/EvilInsults/static/js/2.ef9459f3.chunk.js.LICENSE.txt",
+    "static/media/bg2.adb0a4f1.jpg": "/EvilInsults/static/media/bg2.adb0a4f1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c874d1a7.js",
-    "static/css/2.3406d7a6.chunk.css",
-    "static/js/2.ed96dbc6.chunk.js",
-    "static/css/main.6c500e2f.chunk.css",
-    "static/js/main.1a1d0dcb.chunk.js"
+    "static/js/runtime-main.188d0f08.js",
+    "static/js/2.ef9459f3.chunk.js",
+    "static/css/main.894ca554.chunk.css",
+    "static/js/main.ad059407.chunk.js"
   ]
 }
