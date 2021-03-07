@@ -2,14 +2,13 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.css";
+import "./assets/scss/material-kit-react.scss";
+import Components from "./views/Components/Components.js";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<Components />
 	</React.StrictMode>,
 	document.getElementById("root")
 );

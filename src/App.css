@@ -1,68 +1,28 @@
 /** @format */
 
-.App {
-	position: relative;
-	height: 100vh;
-	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+blockquote {
+	color: rgba(250, 200, 130, 0.6);
+	font-family: Tahoma, sans-serif;
+	width: 60%;
+
+	margin: 0 auto;
 }
 
-blockquote p {
-	color: #ffffff;
-	font-family: "Merriweather", serif;
-	font-size: 30px;
-	font-weight: 300;
-	line-height: 40px;
-	margin: 0 30px 40px;
-	text-align: center;
-	text-shadow: #2a8d7b -1px -1px;
-}
-
-p.author {
-	color: #217969;
-	font-family: "Helvetica Neue", sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 12px;
-	letter-spacing: 3px;
-	text-align: center;
-	text-shadow: #53b4a2 1px 1px;
-	text-transform: uppercase;
-}
-
-p.author span {
-	color: #217969;
-	font-family: "Helvetica Neue", sans-serif;
-	font-style: italic;
-	font-weight: normal;
-	letter-spacing: normal;
-	text-transform: none;
-}
-@keyframes spinner {
-	0% {
-		transform: translate3d(-50%, -50%, 0) rotate(0deg);
-	}
-	100% {
-		transform: translate3d(-50%, -50%, 0) rotate(360deg);
-	}
-}
-.spin::before {
-	animation: 1.5s linear infinite spinner;
-	animation-play-state: inherit;
-	border: solid 5px #cfd0d1;
-	border-bottom-color: #1c87c9;
-	border-radius: 50%;
-	content: "";
-	height: 40px;
-	width: 40px;
-	/* margin-top: 80px; */
+blockquote p::before,
+blockquote p::after {
+	content: "“";
+	font-family: Georgia;
+	font-size: 8rem;
+	margin: -2rem 0 0 -4rem;
 	position: absolute;
-	top: 10%;
-	left: 10%;
-	transform: translate3d(-50%, -50%, 0);
-	will-change: transform;
+	opacity: 0.5;
+}
+
+blockquote p::after {
+	content: "”";
+	margin: -1rem -4rem 0 0;
+}
+
+blockquote cite {
+	font-size: 1.5rem;
 }
