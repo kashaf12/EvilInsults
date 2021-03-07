@@ -3,7 +3,8 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import chroma from "chroma-js";
 import insult from "./insult.json";
-
+import Components from "./views/Components/Components.js";
+import "./assets/scss/material-kit-react.scss?v=1.9.0";
 function App() {
 	const [data, setData] = useState(null);
 	const [color, setColor] = useState(["#33ccff", "#ff99cc"]);
@@ -15,31 +16,34 @@ function App() {
 	}, []);
 
 	return (
-		<div
-			className='App'
-			style={{
-				background: `linear-gradient(to bottom,  ${color[0]} 0%,${color[1]} 100%)`,
-			}}>
-			<h1 className='header mb-2'>Evil Quotes</h1>
+		<>
+			<Components />
 			<div
+				className='App'
 				style={{
-					position: "relative",
-					marginTop: "20px",
+					background: `linear-gradient(to bottom,  ${color[0]} 0%,${color[1]} 100%)`,
 				}}>
-				{!data ? (
-					<div class='spin'></div>
-				) : (
-					<div class='blockquote overlay'>
-						<p
-							style={{
-								fontSize: "larger",
-							}}>
-							{data}
-						</p>
-					</div>
-				)}
+				<h1 className='header mb-2'>Evil Quotes</h1>
+				<div
+					style={{
+						position: "relative",
+						marginTop: "20px",
+					}}>
+					{!data ? (
+						<div class='spin'></div>
+					) : (
+						<div class='blockquote overlay'>
+							<p
+								style={{
+									fontSize: "larger",
+								}}>
+								{data}
+							</p>
+						</div>
+					)}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 }
 
