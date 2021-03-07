@@ -16,6 +16,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import styles from "../../assets/jss/material-kit-react/components/footerStyle";
+import { Code } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -37,15 +38,15 @@ export default function Footer(props) {
 					<List className={classes.list}>
 						<ListItem className={classes.inlineBlock}>
 							<a
-								href='https://www.creative-tim.com/?ref=mkr-footer'
+								href='https://github.com/kashaf12'
 								className={classes.block}
 								target='_blank'>
-								Creative Tim
+								5alcon
 							</a>
 						</ListItem>
 						<ListItem className={classes.inlineBlock}>
 							<a
-								href='https://www.creative-tim.com/presentation?ref=mkr-footer'
+								href='https://github.com/kashaf12'
 								className={classes.block}
 								target='_blank'>
 								About us
@@ -53,7 +54,7 @@ export default function Footer(props) {
 						</ListItem>
 						<ListItem className={classes.inlineBlock}>
 							<a
-								href='http://blog.creative-tim.com/?ref=mkr-footer'
+								href='https://github.com/kashaf12'
 								className={classes.block}
 								target='_blank'>
 								Blog
@@ -61,7 +62,7 @@ export default function Footer(props) {
 						</ListItem>
 						<ListItem className={classes.inlineBlock}>
 							<a
-								href='https://www.creative-tim.com/license?ref=mkr-footer'
+								href='https://github.com/kashaf12'
 								className={classes.block}
 								target='_blank'>
 								Licenses
@@ -71,14 +72,14 @@ export default function Footer(props) {
 				</div>
 				<div className={classes.right}>
 					&copy; {1900 + new Date().getYear()} , made with{" "}
-					<Favorite className={classes.icon} /> by{" "}
+					<Code className={classes.icon} /> by{" "}
 					<a
-						href='https://www.creative-tim.com?ref=mkr-footer'
+						href='https://www.instagram.com/_kashaf_ahmed_/'
 						className={aClasses}
 						target='_blank'>
-						Creative Tim
+						5alcon
 					</a>{" "}
-					for a better web.
+					.
 				</div>
 			</div>
 		</footer>

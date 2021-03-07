@@ -64,8 +64,18 @@ export default function Header(props) {
 		[classes.fixed]: fixed,
 	});
 	const brandComponent = (
-		<Button className={classes.title}>
-			<SvgImage /> {brand}
+		<Button
+			className={classes.title}
+			style={{
+				color: props.newColor,
+			}}>
+			<SvgImage
+				style={{
+					fill: props.newColor,
+					marginRight: "10px",
+				}}
+			/>{" "}
+			{brand}
 		</Button>
 	);
 	return (
@@ -129,6 +139,7 @@ Header.propTypes = {
 		"dark",
 	]),
 	rightLinks: PropTypes.node,
+	newColor: PropTypes.string.isRequired,
 	leftLinks: PropTypes.node,
 	brand: PropTypes.string,
 	fixed: PropTypes.bool,

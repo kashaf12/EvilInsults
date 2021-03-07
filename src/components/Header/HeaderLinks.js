@@ -38,7 +38,12 @@ export default function HeaderLinks(props) {
 						target='_blank'
 						color='transparent'
 						className={classes.navLink}>
-						<i className={classes.socialIcons + " fab fa-twitter"} />
+						<i
+							className={classes.socialIcons + " fab fa-twitter"}
+							style={{
+								color: props.newColor,
+							}}
+						/>
 					</Button>
 				</Tooltip>
 			</ListItem>
@@ -53,7 +58,12 @@ export default function HeaderLinks(props) {
 						href='https://www.facebook.com/CreativeTim?ref=creativetim'
 						target='_blank'
 						className={classes.navLink}>
-						<i className={classes.socialIcons + " fab fa-facebook"} />
+						<i
+							className={classes.socialIcons + " fab fa-facebook"}
+							style={{
+								color: props.newColor,
+							}}
+						/>
 					</Button>
 				</Tooltip>
 			</ListItem>
@@ -67,8 +77,16 @@ export default function HeaderLinks(props) {
 						color='transparent'
 						href='https://www.instagram.com/CreativeTimOfficial?ref=creativetim'
 						target='_blank'
+						style={{
+							color: props.newColor,
+						}}
 						className={classes.navLink}>
-						<i className={classes.socialIcons + " fab fa-instagram"} />
+						<i
+							className={classes.socialIcons + " fab fa-instagram"}
+							style={{
+								color: props.newColor,
+							}}
+						/>
 					</Button>
 				</Tooltip>
 			</ListItem>
