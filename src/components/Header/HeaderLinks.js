@@ -34,7 +34,7 @@ export default function HeaderLinks(props) {
 					placement={window.innerWidth > 959 ? "top" : "left"}
 					classes={{ tooltip: classes.tooltip }}>
 					<Button
-						href='https://twitter.com/CreativeTim?ref=creativetim'
+						href='https://twitter.com/kashafaahmed'
 						target='_blank'
 						color='transparent'
 						className={classes.navLink}>
@@ -55,7 +55,7 @@ export default function HeaderLinks(props) {
 					classes={{ tooltip: classes.tooltip }}>
 					<Button
 						color='transparent'
-						href='https://www.facebook.com/CreativeTim?ref=creativetim'
+						href='https://www.facebook.com/Kashafaahmed/'
 						target='_blank'
 						className={classes.navLink}>
 						<i
@@ -75,7 +75,7 @@ export default function HeaderLinks(props) {
 					classes={{ tooltip: classes.tooltip }}>
 					<Button
 						color='transparent'
-						href='https://www.instagram.com/CreativeTimOfficial?ref=creativetim'
+						href='https://www.instagram.com/_kashaf_ahmed_/'
 						target='_blank'
 						style={{
 							color: props.newColor,
